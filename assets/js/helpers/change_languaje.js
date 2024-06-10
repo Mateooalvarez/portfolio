@@ -1,14 +1,14 @@
-const langToggle = document.querySelector('.btn-language')
-const currentLang = window.location.href.includes('indexenglish.html')
-langToggle.checked = currentLang
-
-function changeLanguaje(Language) {
-    if (langToggle.checked) {
+// languageToggle.js
+function changeLanguage() {
+    const langToggle = document.getElementById('change_languaje');
+    const language = langToggle.checked ? 'english' : 'spanish';
+    
+    if (language === 'english') {
         window.location.href = 'indexenglish.html';
     } else {
-        window.location.href = 'index.html'
+        window.location.href = 'index.html';
     }
 }
-langToggle.addEventListener
 
-export default changeLanguaje
+const langToggle = document.getElementById('change_languaje');
+langToggle.addEventListener('change', changeLanguage);

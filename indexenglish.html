@@ -12,7 +12,7 @@
   <!-- Iconos  -->
   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 
-  <title>Portafolio</title>
+  <title>Portfolio</title>
 
   <link rel="icon" href="assets/img/logo.png" type="image/png">
   <link rel="stylesheet" href="assets/css/styles.css" />
@@ -39,37 +39,46 @@
 
         <ul class="navbar__list">
           <li class="navbar__item">
-            <a class="navbar__link active" href="#home">Inicio</a>
+            <a class="navbar__link active" href="#home">Start</a>
           </li>
           <li class="navbar__item">
-            <a class="navbar__link" href="#about">Acerca de Mí</a>
+            <a class="navbar__link" href="#about">About me</a>
           </li>
           <li class="navbar__item">
-            <a class="navbar__link" href="#skills">Habilidades</a>
+            <a class="navbar__link" href="#skills">Skills</a>
           </li>
           <li class="navbar__item">
-            <a class="navbar__link" href="#projects">Portafolio</a>
+            <a class="navbar__link" href="#projects">Portfolio</a>
           </li>
           <li class="navbar__item">
-            <a class="navbar__link" href="#contact">Contacto</a>
+            <a class="navbar__link" href="#contact">Contact</a>
           </li>
         </ul>
       </div>
       <div class="navbar__toggles">
         <div class="navbar__toggle--darkmode">
-            <input type="checkbox" name='color-scheme' id="darkmode-toggle" class="navbar__toggle--darkmode-input" />
-            <label for="darkmode-toggle" class="navbar__toggle--darkmode-label">
-                <i class='bx bx-sun navbar__toggle--darkmode-sun'></i>
-                <i class='bx bx-moon navbar__toggle--darkmode-moon'></i>
-            </label>
+          <input type="checkbox" name='color-scheme' id="darkmode-toggle" class="navbar__toggle--darkmode-input" />
+          <label for="darkmode-toggle" class="navbar__toggle--darkmode-label">
+              <i class='bx bx-sun navbar__toggle--darkmode-sun'></i>
+              <i class='bx bx-moon navbar__toggle--darkmode-moon'></i>
+          </label>
+      </div>
+      <div class="navbar__toggle--language">
+        <input type="checkbox" id="language-toggle" class="navbar__toggle--language-input" />
+        <label for="language-toggle" class="navbar__toggle--language-label"></label>
+    </div>
+  </div>
+          <input type="checkbox" name='color-scheme' id="darkmode-toggle" class="navbar__toggle--darkmode-input" />
+          <label for="darkmode-toggle" class="navbar__toggle--darkmode-label">
+            <i class='bx bx-sun navbar__toggle--darkmode-sun'></i>
+            <i class='bx bx-moon navbar__toggle--darkmode-moon'></i>
+          </label>
         </div>
         <div class="navbar__toggle--language">
-          <input type="checkbox" id="change_languaje" class="navbar__toggle--language-input" />
-          <label for="change_languaje" class="navbar__toggle--language-label"></label>
+          <input type="checkbox" id="language-toggle" class="navbar__toggle--language-input" />
+          <label for="language-toggle" class="navbar__toggle--language-label">
+        </div>
       </div>
-      <script src="change_languaje.js"></script>
-    </div>
-    
       <a href="#nav"><i class="bx bx-menu btn__open navbar__icon"></i></a>
     </nav>
   </header>
@@ -110,12 +119,12 @@
 
         <div class="home__info">
 
-          <h1 class="home__title">¡Hola! soy Mateo</h1>
+          <h1 class="home__title">¡Hello! I'm Mateo</h1>
 
           <p class="home__description">
-            Soy desarrollador web, apasionado por la tecnología y la
-            programación. Programar, para mi, es un hobbie que me ayuda a no
-            pensar en nada mas que esto.
+            I am a web developer, passionate about technology and
+            programming. Programming, for me, is a hobby that helps me not
+            think of nothing more than this.
           </p>
         </div>
 
@@ -127,30 +136,45 @@
             download="my_cv"
             rel="noreferrer nofollow"
           >
-            Descargar CV
+            Download CV
           </a>
         </div>
       </div>
 
     </section>
     <section id="about" class="about section">
-      <h2 class="section__title">Acerca de Mí</h2>
+      <h2 class="section__title">About me</h2>
 
       <div class="about__container grid--container">
         <p class="about__description">
-        Soy Mateo, estudiante de academlo, tengo experiencia en el desarrollo, me gusta aprender cosas nuevas, 
-        ademas de aprender rapido soy muy apasionado por lo que me gusta
+        I am Mateo, an academic student, I have experience in development, I like to learn new things,
+        In addition to learning quickly, I am very passionate about what I like.
         </p>
+
+        <div class="about__cards">
+          <!--Card 1 -->
+          <div class="about__card">
+            <img class="about__card--img" src="assets/img/WhatsApp Image 2024-04-09 at 1.13.46 AM.jpeg" alt="working in team" title="working in team">
+          </div>
+          <!--Card 2 -->
+          <div class="about__card">
+            <img class="about__card--img" src="assets/img/WhatsApp Image 2024-04-09 at 1.14.14 AM.jpeg" alt="working as an designer" title="With my mom accompanying me">
+          </div>
+          <!--Card 3 -->
+          <div class="about__card">
+            <img class="about__card--img" src="assets/img/WhatsApp Image 2024-04-09 at 1.19.16 AM.jpeg" alt="Working as an engineer" title="My famili">
+          </div>
+        </div>
 
       </div>
     </section>
     <section id="skills" class="skills section">
-      <h2 class="section__title">Habilidades</h2>
+      <h2 class="section__title">Skills</h2>
 
       <div class="skills__container grid--container">
         <p class="skills__description">
-         Aprendo rapido lo que sea necesario, soy muy paciente en cuanto a los codigos,
-         me gusta trabajar en equipo y brindar mi ayuda si hace falta
+            I learn quickly whatever is necessary, I am very patient when it comes to codes,
+            I like to work as a team and offer my help if necessary
         </p>
 
         <div class="skills__wrapper">
@@ -162,9 +186,9 @@
                 <i class="bx bxl-html5"></i>
                 <div class="skills__description">
                   <h3 class="skills__card-title">HTML</h3>
-                  <p>Durante mi trayectoria como desarrollador web, he adquirido un solido coonocimiento 
-                    y experiencia en HTML. Estoy capacitado para crear estructuras semanticas y accesibles que formen
-                  parte de cualquier proyecto web.</p>
+                  <p>During my career as a web developer, I have acquired solid knowledge
+                    and HTML experience. I am trained to create semantic and accessible structures that form
+                  part of any web project.</p>
                 </div>
               </div>
             </label>
@@ -175,8 +199,8 @@
                 <i class="bx bxl-css3"></i>
                 <div class="skills__description">
                   <h3 class="skills__card-title">CSS3</h3>
-                  <p>Mi experiencia en CSS3 me permite dar vida a los diseños web con estilos elegantes y modernos.
-                    Estoy familiarizado con las ultimas tecnicas de diseño.
+                  <p>My experience in CSS3 allows me to bring web designs to life with elegant and modern styles.
+                    I am familiar with the latest design techniques.
                   </p>
                 </div>
               </div>
@@ -188,8 +212,8 @@
                 <i class="bx bxl-javascript"></i>
                 <div class="skills__description">
                   <h3 class="skills__card-title">Javascript</h3>
-                  <p>Como apasionado del desarrollo web, me he especializado en JavaScript y estoy constantemente 
-                    actualizando mis conocimientos para mantenerme al dia con las ultimas tendencias y tecnologias
+                  <p>As a web development enthusiast, I have specialized in JavaScript and am constantly
+                    updating my knowledge to keep up to date with the latest trends and technologies
                   </p>
                 </div>
               </div>
@@ -201,8 +225,8 @@
                 <i class='bx bxl-react'></i>
                 <div class="skills__description">
                   <h3 class="skills__card-title">React</h3>
-                  <p>Mi experiencia con react me ha permitido desarrollar aplicaciones web modernas y estables 
-                    de manera eficiente. 
+                  <p>My experience with react has allowed me to develop modern and stable web applications
+                    efficiently. 
                   </p>
                 </div>
               </div>
@@ -212,19 +236,19 @@
         <div class="skills__tags">
           <h3 class="skills__tags-title">Habilidades Blandas</h3>
           <div class="skills__tags-container">
-            <span class="skills__tag">Responsable</span>
-            <span class="skills__tag">Trabajo en equipo</span>
-            <span class="skills__tag">Creativo</span>
-            <span class="skills__tag">Puntual</span>
-            <span class="skills__tag">Proactivo</span>
-            <span class="skills__tag">Autodidacta</span>
-            <span class="skills__tag">Trabajador</span>
+            <span class="skills__tag">Responsible</span>
+            <span class="skills__tag">Teamwork</span>
+            <span class="skills__tag">Creative</span>
+            <span class="skills__tag">Punctual</span>
+            <span class="skills__tag">Proactive</span>
+            <span class="skills__tag">Autodidact</span>
+            <span class="skills__tag">Worker</span>
           </div>
         </div>
       </div>
     </section>
     <section id="projects" class="projects section">
-      <h2 class="section__title">Proyectos</h2>
+      <h2 class="section__title">Proyects</h2>
       <div class="projects__container grid--container">
         <!-- Project 1  -->
         <div class="projects__project">
@@ -325,21 +349,20 @@
       </div>
     </section>
     <section id="contact" class="contact section">
-      <h2 class="section__title">Contacto</h2>
+      <h2 class="section__title">Contact</h2>
 
       <div class="contact__container grid--container">
         <div class="contact__info">
-          <h3 class="contact__info-title">Información de contacto</h3>
+          <h3 class="contact__info-title">Contact information</h3>
           <p class="contact__info-description">
-             Dedicado al desarrollo de software en busca de nuevos desafios. ¡Contactame y creemos juntos!
-          </p>
-
+            Dedicated to software development in search of new challenges. Contact me and let's create together!          
+        </p>
           <address class="contact__info-data">
             <div class="contact__info-item">
               <i class='bx bxl-whatsapp'></i>
 
               <span class="contact__info-number">
-                <a href="https://wa.me/5492317573562" target="_blank" rel="noreferrer nofollow">Enviar mensaje a
+                <a href="https://wa.me/5492317573562" target="_blank" rel="noreferrer nofollow">Send message to
                   WhatsApp</a>
               </span>
             </div>
@@ -368,33 +391,39 @@
           </address>
         </div>
         <div class="contact__form">
-          <h3 class="contact__form-title">Enviar mensaje</h3>
+          <h3 class="contact__form-title">Send message</h3>
           <form id="form" class="contact__form-container" action="/php/procesar_formulario.php" method="POST">
-              <div class="contact__form-group">
-                  <label for="name" class="contact__form-label">Nombre</label>
-                  <input type="text" id="name" name="name" class="contact__form-input" />
-              </div>
-      
-              <div class="contact__form-group">
-                  <label for="email" class="contact__form-label">Correo</label>
-                  <input type="email" id="email" name="email" class="contact__form-input" />
-              </div>
-      
-              <div class="contact__form-group">
-                  <label for="subject" class="contact__form-label">Asunto</label>
-                  <input type="text" id="subject" name="subject" class="contact__form-input" />
-              </div>
-      
-              <div class="contact__form-group">
-                  <label for="message" class="contact__form-label">Mensaje</label>
-                  <textarea id="message" name="message" cols="30" rows="10" class="contact__form-input"></textarea>
-              </div>
-                <button type="submit" class="btn contact__form-button">
-                  Enviar
-              </button>
+            <div class="contact__form-group">
+              <label for="name" class="contact__form-label">Name</label>
+              <input type="text" id="name" name="name" class="contact__form-input" />
+            </div>
+
+            <div class="contact__form-group">
+              <label for="email" class="contact__form-label">Correo</label>
+              <input type="email" id="email" name="email" class="contact__form-input" />
+            </div>
+
+            <div class="contact__form-group">
+              <label for="subject" class="contact__form-label">Affair</label>
+              <input type="text" id="subject" name="subject" class="contact__form-input" />
+            </div>
+
+            <div class="contact__form-group">
+              <label for="message" class="contact__form-label">Message</label>
+              <textarea id="message" name="message" cols="30" rows="10" class="contact__form-input"></textarea>
+            </div>
+            <dialog id="modal">
+              Formulario enviado con éxito!
+              <button type="reset" id="btn_close-modal">Close</button>
+            </dialog>
+
+            <button type="submit" class="btn contact__form-button">
+              Send
+            </button>
+
           </form>
+        </div>
       </div>
-      
     </section>
   </main>
   <footer class="footer section">
@@ -402,13 +431,13 @@
       <div class="footer__info">
         <h3 class="footer__title">Mateo Alvarez</h3>
         <p class="footer__description">
-          Soy desarrollador web, apasionado por la tecnología y la
-          programación. ¡No dudes en consultarme!
+            I am a web developer, passionate about technology and
+            programming. Do not hesitate to contact me!
         </p>
       </div>
 
       <div class="footer__social">
-        <h3 class="footer__title">Redes Sociales</h3>
+        <h3 class="footer__title">Social networks</h3>
 
         <ul class="footer__social-list">
           <li class="footer__social-item">

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
-
+ 
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -18,15 +18,28 @@
   <link rel="stylesheet" href="assets/css/styles.css" />
 
   <script type="module" src="assets/js/main.js" defer></script>
-
+  
   <script type="text/JavaScript">
-    (function () {
-      emailjs.init({
-        publicKey: 'Z5ECMJy-J53z-3r_I'
-      })
-    })();
+    (function() {
+            emailjs.init({
+              publicKey: "Z5ECMJy-J53z-3r_I",
+            });
+        })();
   </script>
-
+<script type="text/javascript">
+  window.onload = function() {
+      document.getElementById('contact-form').addEventListener('submit', function(event) {
+          event.preventDefault();
+          // these IDs from the previous steps
+          emailjs.sendForm('contact_service', 'contact_form', this)
+              .then(() => {
+                  console.log('SUCCESS!');
+              }, (error) => {
+                  console.log('FAILED...', error);
+              });
+      });
+  }
+</script>
 </head>
 
 <body>
@@ -369,7 +382,8 @@
         </div>
         <div class="contact__form">
           <h3 class="contact__form-title">Enviar mensaje</h3>
-          <form id="form" class="contact__form-container" action="/php/procesar_formulario.php" method="POST">
+          <form id="form" class="contact__form-container" action="https://portfolio-mateo-alvarez.netlify.app/" method="post">
+            <input type="hidden" name="contact_number" value="697483">
               <div class="contact__form-group">
                   <label for="name" class="contact__form-label">Nombre</label>
                   <input type="text" id="name" name="name" class="contact__form-input" />

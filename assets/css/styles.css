@@ -22,9 +22,9 @@
 
 	/* Colores */
 	--primary-color: light-dark(#111, #ffffffcc);
-	--bg-color-section1: light-dark(#eee, #111);
-	--bg-color-section2: light-dark(#fafafa, #6a6a6a);
-	--bg-color-buttons: light-dark(#e0e0e0, #6a6a6a);
+	--bg-color-section1: light-dark(#e18ebbc6, #111);
+	--bg-color-section2: light-dark(#e47eb6e6, #6a6a6a);
+	--bg-color-buttons: light-dark(#e18ebbc6, #6a6a6a);
 
 	/* Typografia */
 	--normal-font-size: 16px;

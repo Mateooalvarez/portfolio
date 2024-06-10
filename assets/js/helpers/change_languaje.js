@@ -1,4 +1,3 @@
-// languageToggle.js
 function changeLanguage() {
     const langToggle = document.getElementById('change_languaje');
     const language = langToggle.checked ? 'english' : 'spanish';
@@ -12,3 +11,5 @@ function changeLanguage() {
 
 const langToggle = document.getElementById('change_languaje');
 langToggle.addEventListener('change', changeLanguage);
+
+export default 'change_languaje'

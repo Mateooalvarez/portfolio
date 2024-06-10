@@ -29,3 +29,4 @@ function sendEmail(e) {
 closeButton.addEventListener('click', closeModal);
 formulario.addEventListener('submit', sendEmail);
 
+export default 'send_form'
